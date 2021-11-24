@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Matestack engine boilerplate</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag "matestack_engine_boilerplate/application", media: "all" %>
+  <%= render 'matestack_engine_boilerplate/shared/matestack_cdn' %>
+  <%= javascript_include_tag "matestack_engine_boilerplate/application", media: "all" %>
+</head>
+<body>
+
+<div id="matestack-engine-app">
+  <%= yield %>
+</div>
+
+</body>
+</html>

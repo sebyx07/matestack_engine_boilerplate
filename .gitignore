@@ -1,0 +1,9 @@
+/.bundle/
+/doc/
+/log/*.log
+/pkg/
+/tmp/
+/node_modules/
+package.json
+yarn.lock
+.idea/
