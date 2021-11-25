@@ -6,8 +6,12 @@
   <%= csp_meta_tag %>
 
   <%= stylesheet_link_tag "matestack_engine_boilerplate/application", media: "all" %>
-  <%= render 'matestack_engine_boilerplate/shared/matestack_cdn' %>
-  <%= javascript_include_tag "matestack_engine_boilerplate/application", media: "all" %>
+  <script type="text/javascript" charset="utf-8">
+    window.process = { env: { NODE_ENV: '<%= Rails.env %>' } }
+  </script>
+  <%= javascript_importmap_tags "matestack_engine_boilerplate/application" %>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha256-YvdLHPgkqJ8DVUxjjnGVlMMJtNimJ6dYkowFFvp4kKs=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/matestack-ui-bootstrap-beta@2.1.14/dist/matestack-ui-bootstrap.css" integrity="sha256-7wwBHV/0p2s9wtJEwcQmVZM+pAn93jyCB2b1pbmLLV8=" crossorigin="anonymous">
 </head>
 <body>
 

@@ -25,5 +25,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency "matestack-ui-bootstrap"
   spec.add_dependency "matestack-ui-core"
   spec.add_dependency "rails"
+  spec.add_dependency "importmap-rails"
   spec.add_development_dependency "rubocop-rails_config"
 end
